@@ -115,4 +115,3 @@ employerSchema.method.comparePassword = async (
 ) => {
     return await bcrypt.compare(candidatePassword, userPassword);
 };
-
