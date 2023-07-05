@@ -1,5 +1,7 @@
 const Employee = require('../models/Employee');
 
+
+// code for creating user
 exports.createUser = async (req, res) => {
     try {
         const candidate = await Employee.create(req.body);
@@ -18,6 +20,7 @@ exports.createUser = async (req, res) => {
     }
 }
 
+// access the user by the ID
 exports.getUser = async (req, res) => {
     try {
         const id = req.params.id;
